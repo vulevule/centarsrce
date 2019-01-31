@@ -41,6 +41,8 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>CentarSrce would like to use your michrophone</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>CentarSrce would like to use your photos</string>
 	<key>NSPhotoLibraryUsageDescription</key>

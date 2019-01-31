@@ -23,23 +23,21 @@ export default class Camera extends React.Component {
 
   render () {
     return (
-      <View style={styles.container}>
-        <RNCamera
-          ref={ref => {
-            this.camera = ref;
-          }}
-          style={styles.preview}
-          type={RNCamera.Constants.Type.back}
-          flashMode={RNCamera.Constants.FlashMode.off}
-        >
-          <View style={styles.cameraButton}>
-            <TouchableOpacity onPress={this.takePicture} style={styles.capture}>
-              <Text style={styles.buttonText}> Slikaj </Text>
-            </TouchableOpacity>
-          </View>
-        </RNCamera>
+      <RNCamera
+        ref={ref => {
+          this.camera = ref;
+        }}
+        style={[styles.preview, { flex: 1, flexDirection: 'column', backgroundColor: 'black' } ]}
+        type={RNCamera.Constants.Type.back}
+        flashMode={RNCamera.Constants.FlashMode.off}
+      >
+        <View style={styles.cameraButton}>
+          <TouchableOpacity onPress={this.takePicture} style={styles.capture}>
+            <Text style={styles.buttonText}> Slikaj </Text>
+          </TouchableOpacity>
+        </View>
         <Toast ref="toast" position="bottom" />
-      </View>
+      </RNCamera>
     );
   }
 

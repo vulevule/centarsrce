@@ -18,7 +18,7 @@ import { Header } from 'react-navigation';
 import ArticleTitle from '../article_title/ArticleTitle';
 import Footer from '../footer/Footer';
 import styles from './styles';
-import { read, moveAttachment, dirHome, mkDir, askPermissions } from './LocalStorage';
+import { read, moveAttachment, dirHome, mkDir } from './LocalStorage';
 
 export default class MyFiles extends React.Component {
   static navigationOptions = {
